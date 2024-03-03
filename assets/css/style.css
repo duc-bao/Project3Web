@@ -1,10 +1,98 @@
 *{
     box-sizing: border-box;
 }
+:root{
+    --primary-color : #FFF;
+}
 html{
     font-size: 62.5%;
 }
 body{
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
+}
+
+
+/* Commom */
+
+a{
+    text-decoration: none;
+}
+.btn{
+    display: inline-block;
+    width: 205px;
+    line-height: 60px;
+    border-radius: 999px;
+    background: #2E80CE;
+    color: #FFF;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+h2{
+    color: #10375C;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.2; /* 120% */
+    letter-spacing: -1px;
+}
+.container{
+    width: 1170px;
+    min-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+/* Header */
+.header{
+    padding-top: 30px;
+    background: #10375C;
+    min-height: 100vh;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .header-top .logo{
+    width: 86px;
+    height: 31px;
+
+}
+.header .navbar__list{
+    display: flex;
+}
+.navbar__link, .action__login{
+    padding: 8px 21px;
+    color: #C9D2DA;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 28px; /* 175% */
+}
+.navbar__link:hover,
+.navbar__link--active{
+    text-shadow: 1px 0 0 currentColor;
+    color: #FFF;
+}
+.navbar__link--active::before{
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #FFF;
+    position: relative;
+    right: 8px;
+    top: -3px;
+}
+ .action__signup{
+    width: 104px;
+    line-height: 44px;
+    font-size: 1.6rem;
+}
+.action__login{
+    margin-right: 7px;
 }
